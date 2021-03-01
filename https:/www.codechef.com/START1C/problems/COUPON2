@@ -1,0 +1,61 @@
+#include<stdio.h>
+int main()
+{
+  int i, t;
+  scanf("%d",&t);
+  for(i=1;i<=t;i++)
+  {
+      int d,c,a1,a2,a3,b1,b2,b3,t1,t2;
+      scanf("%d" "%d", &d,&c);
+      scanf("%d %d %d",&a1,&a2,&a3);
+      scanf("%d %d %d",&b1,&b2,&b3);
+      t1=a1+a2+a3+b1+b2+b3+c;
+      t2=a1+a2+a3+b1+b2+b3+d+d;
+      if(a1+a2+b2>=150 && b1+b2+b3>=150)
+      {
+          if(t1<t2)
+          {
+              printf("YES\n");
+          }
+          else
+          {
+              printf("NO\n");
+          }
+      }
+      else if(a1+a2+a3>=150 && b1+b2+b3<150)
+      {
+          if(t1+d<t2)
+          {
+              printf("YES\n");
+          }
+          else
+          {
+              printf("NO\n");
+          }
+      }
+      else if(a1+a2+a3<150 && b1+b2+b3>=150)
+      {
+          if(t1+d<t2)
+          {
+              printf("YES\n");
+          }
+          else
+          {
+              printf("NO\n");
+          }
+      }
+      else if(a1+a2+a3<150 && b1+b2+b3<150)
+      {
+          if(t1+d+d<t2)
+          {
+              printf("YES\n");
+          }
+          else
+          {
+              printf("NO\n");
+          }
+      }
+
+  }
+
+}
